@@ -18,15 +18,6 @@ Thumbs.db
 # Ignore Excel files (optional)
 *.xlsx
 
-# Ignore image test and output folders (optional if large)
-test images/
-output_snippets/
-
-# Ignore model files or large binary artifacts (if added later)
-*.h5
-*.pkl
-*.joblib
-
 # Ignore environment or dependency caches
 *.env
 .env/
