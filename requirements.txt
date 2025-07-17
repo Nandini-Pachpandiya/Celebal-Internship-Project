@@ -1,0 +1,36 @@
+# Core libraries
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# Image processing
+opencv-python==4.9.0.80
+Pillow==10.3.0
+
+# Machine Learning
+scikit-learn==1.4.2
+xgboost==2.0.3
+
+# Deep Learning
+tensorflow==2.17.0
+keras==2.17.0
+
+# Misc
+jupyterlab==4.1.6
+notebook==7.1.2
+
+# UI
+streamlit==1.46.0
+
+
+📌 How to Use
+1. Create a virtual environment:
+    python -m venv venv
+
+2. Activate the environment:
+    On Windows:
+    venv\Scripts\activate
+
+3. Install dependencies:
+    pip install -r requirements.txt

@@ -1,0 +1,63 @@
+🌿 Plant Disease Classification using CNN and Traditional ML
+
+1. Introduction
+    This project focuses on classifying plant leaf images into four categories: Healthy, Rust, Scab, and Multiple Diseases. We utilized both Convolutional Neural Networks (CNN) and Traditional Machine Learning models to analyze image data, with a user-friendly Streamlit UI to make predictions on individual test images.
+
+2. Internship Organization:
+    Celebal Technologies
+
+3. Internship Duration:
+    02.06.2025 – 03.08.2025
+
+
+4. Dataset Overview
+    The dataset used in this project is derived from the Kaggle Plant Pathology 2020 competition. Each training image is labeled as one of the following classes: ‘healthy’, ‘multiple_diseases’, ‘rust’, or ‘scab’. The dataset includes:
+
+    •	- train.csv: Contains labeled training images
+    •	- test.csv: Contains test images to predict
+    •	- images/: Folder with training images
+    •	- test images/: Folder with test images
+
+5. Methodology
+
+    5.1 Data Preprocessing
+        Images were resized to 128x128 pixels, normalized, and labels were one-hot encoded. We used train-test split with stratified sampling to preserve class balance.
+
+    5.2 Data Augmentation
+        To improve model generalization, ImageDataGenerator was applied with rotation, zoom, shift, and flip transformations.
+
+    5.3 CNN Model Architecture
+        We built a CNN model using TensorFlow/Keras with the following architecture:
+        - 3 Convolutional Layers (with increasing filters)
+        - MaxPooling after each convolution
+        - Flatten → Dense → Dropout → Softmax output
+        The model was compiled using Adam optimizer and categorical crossentropy loss.
+
+    5.4 Traditional ML Models
+        In addition to CNN, traditional ML models such as Random Forest, SVM, and Logistic Regression were trained using handcrafted features like color histograms and texture descriptors.
+
+6. Evaluation
+    CNN Accuracy on Validation Set: ~85%
+    Classification Report: Precision, Recall, F1-score evaluated per class
+    Confusion Matrix used for visual comparison between predictions and ground truth
+
+7. Streamlit Web App
+    We built a Streamlit UI that allows users to upload an image and get the predicted label along with class-wise probabilities. This makes the project interactive and user-friendly for demonstration.
+
+8. Project Structure
+    •	- cnn_preprocessing.ipynb: Main training notebook for CNN
+    •	- traditional_method_pre-processing.ipynb: Notebook for traditional ML approaches
+    •	- model/: Contains trained model files
+    •	- utils/: Utility scripts
+    •	- streamlit_app.py: Streamlit UI application
+    •	- requirements.txt: List of required packages
+    •	- report.txt and README.md: Documentation files
+
+9. How to Run the Project
+    1. Ensure Python 3.8+ is installed.
+    2. Install dependencies: pip install -r requirements.txt
+    3. Run CNN notebook for training.
+    4. To launch the web app: streamlit run streamlit_app.py
+
+10. Conclusion
+    This project successfully demonstrates the use of both CNN and Traditional ML models for classifying plant leaf diseases. The addition of Streamlit UI enhances usability and makes the solution deployable. Future work could include testing on larger datasets and deploying to a cloud service.
