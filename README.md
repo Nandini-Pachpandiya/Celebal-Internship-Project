@@ -2,18 +2,18 @@
 
 ## 📌 Project Overview
 
-This project focuses on classifying plant leaf images into four categories: **healthy**, **multiple_diseases**, **rust**, and **scab** using both **Traditional Machine Learning** and **Convolutional Neural Networks (CNNs)**.
+This project focuses on classifying plant leaf images into four categories: healthy, **multiple_diseases, **rust, and **scab using both Traditional Machine Learning and Convolutional Neural Networks (CNNs).
 
 The goal is to accurately identify diseases from leaf images and compare different model performances, followed by building a deep learning solution that significantly improves accuracy.
 
 
 ## 📁 Dataset
 
-The dataset used in this project is sourced from Kaggle’s **Plant Pathology 2020** competition.
+The dataset used in this project is sourced from Kaggle’s Plant Pathology 2020 competition.
 
-- **train.csv**: Contains `image_id` and one-hot encoded class labels.
-- **images/**: Folder containing training images named as `Train_0.jpg`, `Train_1.jpg`, etc.
-- **test_images/**: Folder containing test images named as `Test_0.jpg`, `Test_1.jpg`, etc.
+- train.csv: Contains image_id and one-hot encoded class labels.
+- images/: Folder containing training images named as Train_0.jpg, Train_1.jpg, etc.
+- test_images/: Folder containing test images named as Test_0.jpg, Test_1.jpg, etc.
 
 
 ## 📚 Technologies Used
@@ -27,29 +27,26 @@ The dataset used in this project is sourced from Kaggle’s **Plant Pathology 20
 
 
 
-## ⚙️ Project Structure
 
-CELEBAL PROJECT/
-│
-├── .venv/ # Virtual environment
-├── images/ # Folder with training images
-├── test images/ # Folder with test images
-├── model/ # Directory for saved models
-├── utils/ # Utility files/functions
-│
-├── cnn_preprocessing.ipynb # Main CNN training and preprocessing code
-├── traditionl_method_proj.ipynb # Code for traditional ML models
-│
-├── train.csv # Training label data
-├── test.csv # Test image ids
-├── cnn_submission.csv # Submission output from CNN predictions
-├── submission_final.csv # Submission output from traditional methods
-|__ output_snippets # contains snippets of some of the images
-│
-├── streamlit_app.py # Streamlit web app for predictions
-├── requirements.txt # Python dependencies
-├── report.txt # Internship report
-└── README.md # You're reading it!
+## ⚙ Project Structure
+
+*CELEBAL PROJECT/*
+  - .venv/  # Virtual environment
+  - images/ # Folder with training images
+  - test images # Folder with test images/
+  - model/  # Directory for saved models
+  - utils/  # Utility files/functions
+  - output_snippets/
+  - cnn_preprocessing.ipynb  # Main CNN training and preprocessing code
+  - traditionl_method_proj.ipynb # Code for traditional ML models
+  - streamlit_app.py   # Streamlit web app for predictions
+  - train.csv  # Training label data
+  - test.csv  # Test image ids
+  - cnn_submission.csv
+  - submission_final.csv
+  - requirements.txt  # Python dependencies
+  - report.txt
+  - README.md
 
 ## 🧠 Models Used
 
@@ -60,21 +57,21 @@ CELEBAL PROJECT/
 - K-Nearest Neighbors (KNN)
 - Voting Ensemble
 
-**Best Accuracy (Traditional):** ~60.5%
+Best Accuracy (Traditional): ~60.5%
 
 ### ✅ Deep Learning (CNN):
 - Built a CNN from scratch
-- Applied **Data Augmentation** and **Class Weights**
-- Used **LabelEncoder** and `to_categorical` for preprocessing
+- Applied Data Augmentation and Class Weights
+- Used LabelEncoder and to_categorical for preprocessing
 
-**Best Accuracy (CNN):** **85%**
+Best Accuracy (CNN): 85%
 
 ## 📊 Evaluation Metrics
 
-- **Accuracy**
-- **Precision, Recall, F1-Score**
-- **Confusion Matrix**
-- Special focus was given to handling the imbalanced `multiple_diseases` class using:
+- Accuracy
+- Precision, Recall, F1-Score
+- Confusion Matrix
+- Special focus was given to handling the imbalanced multiple_diseases class using:
   - Class weights
   - Data augmentation
 
@@ -134,6 +131,3 @@ Nandini Pachpandiya
 
 ## 📩 Feedback & Suggestions
 Feel free to raise issues or suggestions for improvement. This project helped me deeply understand how machine learning and deep learning models are built and evaluated on real-world datasets.
-
-
-
