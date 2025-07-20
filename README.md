@@ -30,7 +30,7 @@ The dataset used in this project is sourced from Kaggle’s Plant Pathology 2020
 
 ## ⚙ Project Structure
 
-*CELEBAL PROJECT/*
+CELEBAL PROJECT/
   - .venv/  # Virtual environment
   - images/ # Folder with training images
   - test images # Folder with test images/
@@ -77,30 +77,55 @@ Best Accuracy (CNN): 85%
 
 ## 🧪 How to Run the Project
 
-1. Download and extract the submitted folder.
+1.  *Download and Extract*
+    Download and extract the submitted project folder to your local machine.
 
-2. Navigate to the project directory in your terminal:
-    cd path_to_downloaded_folder
+2.  *Navigate to Project Directory*
+    Open your terminal or command prompt and change to the project's root directory.
+    bash
+    cd path/to/the/project_folder
+    
 
-3. (Optional) Create a virtual environment and activate it:
-    .venv\Scripts\activate     # For Windows
-                  #OR
-    source .venv/bin/activate  # For macOS/Linux
+3.  *Create and Activate Virtual Environment (Optional but Recommended)*
+    This keeps your project dependencies isolated.
 
-4. Install dependencies
-pip install -r requirements.txt
+    * *On Windows:*
+        powershell
+        # Create the environment
+        python -m venv .venv
+
+        # Activate the environment
+        .venv\Scripts\activate
+        
+
+    * *On macOS/Linux:*
+        bash
+        # Create the environment
+        python3 -m venv .venv
+
+        # Activate the environment
+        source .venv/bin/activate
+        
+
+4.  *Install Dependencies*
+    Install all the required Python packages from the requirements.txt file.
+    bash
+    pip install -r requirements.txt
+    
+    
 
 5. Run notebooks
 plant_disease_cnn_model_final/cnn_preprocessing.ipynb → For CNN training and evaluation
 traditional_model_pre-processing.ipynb → For SVM, RF, Logistic Regression, etc.
-
 ## 📤 Submission File
-The final prediction file submission_final.csv(traditional method) and cnn_submission(CNN based) contains:
 
+The final prediction files, **submission_final.csv** (from traditional methods) and **cnn_submission.csv** (from the CNN), are formatted as follows:
+
+csv
 image_id,label
 Test_0,rust
 Test_1,rust
-...
+
 
 ## 💾 Model Saving & Loading
 
@@ -123,9 +148,9 @@ Upload a test image to get prediction and probability of each class.
 4. Built a complete ML pipeline: preprocessing, training, evaluation, and prediction.
 
 ## 🧑‍💻 Author
-Nandini Pachpandiya
-🎓 B.Tech in Artificial Intelligence & Data Science
-💼 Internship: Celebal Technologies
+Nandini Pachpandiya  
+🎓 B.Tech in Artificial Intelligence & Data Science  
+💼 Internship: Celebal Technologies  
 📅 Project Duration: 02.06.2025 - 03.08.2025
 
 
