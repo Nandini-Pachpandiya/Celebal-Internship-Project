@@ -26,11 +26,9 @@ The dataset used in this project is sourced from Kaggle’s Plant Pathology 2020
 - ImageDataGenerator (for data augmentation)
 
 
-
-
 ## ⚙ Project Structure
 
-CELEBAL PROJECT/
+*CELEBAL PROJECT/*
   - .venv/  # Virtual environment
   - images/ # Folder with training images
   - test images # Folder with test images/
@@ -77,55 +75,55 @@ Best Accuracy (CNN): 85%
 
 ## 🧪 How to Run the Project
 
-1.  *Download and Extract*
+1.  **Download and Extract**
     Download and extract the submitted project folder to your local machine.
 
-2.  *Navigate to Project Directory*
+2.  **Navigate to Project Directory**
     Open your terminal or command prompt and change to the project's root directory.
-    bash
+    ```bash
     cd path/to/the/project_folder
-    
+    ```
 
-3.  *Create and Activate Virtual Environment (Optional but Recommended)*
+3.  **Create and Activate Virtual Environment (Optional but Recommended)**
     This keeps your project dependencies isolated.
 
-    * *On Windows:*
-        powershell
+    * **On Windows:**
+        ```powershell
         # Create the environment
         python -m venv .venv
 
         # Activate the environment
         .venv\Scripts\activate
-        
+        ```
 
-    * *On macOS/Linux:*
-        bash
+    * **On macOS/Linux:**
+        ```bash
         # Create the environment
         python3 -m venv .venv
 
         # Activate the environment
         source .venv/bin/activate
-        
+        ```
 
-4.  *Install Dependencies*
-    Install all the required Python packages from the requirements.txt file.
-    bash
+4.  **Install Dependencies**
+    Install all the required Python packages from the `requirements.txt` file.
+    ```bash
     pip install -r requirements.txt
+    ```
     
-    
-
 5. Run notebooks
 plant_disease_cnn_model_final/cnn_preprocessing.ipynb → For CNN training and evaluation
 traditional_model_pre-processing.ipynb → For SVM, RF, Logistic Regression, etc.
+
 ## 📤 Submission File
 
-The final prediction files, **submission_final.csv** (from traditional methods) and **cnn_submission.csv** (from the CNN), are formatted as follows:
+The final prediction files, **`submission_final.csv`** (from traditional methods) and **`cnn_submission.csv`** (from the CNN), are formatted as follows:
 
-csv
+```csv
 image_id,label
 Test_0,rust
 Test_1,rust
-
+```
 
 ## 💾 Model Saving & Loading
 
